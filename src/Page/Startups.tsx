@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import CircularIndeterminate from "../Components/Loading/Loading";
-import StartupList from "../Components/Startup/StartupList";
+import OutlinedCard from "../Components/Startup/StartupList";
 import { StartupHttpService } from "../Http/Startup/Startup.http.service";
 import { Startup } from "../Types/Startup";
 
@@ -21,7 +21,7 @@ const Startups: React.FC = () => {
   return (
     <Fragment>
       {isLoading && <CircularIndeterminate />}
-      <StartupList startups={allStartups} />
+      <OutlinedCard startups={allStartups} />
     </Fragment>
   );
 };
