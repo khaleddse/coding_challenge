@@ -12,7 +12,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import SideNav from "./Components/Navigation/SideNav";
 import ApplicationBar from "./Components/Navigation/ApplicationBar";
 import { ReactElement } from "react";
-import StartupList from "./Components/Startup/StartupList";
+import Startups from "./Page/Startups";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -70,7 +70,7 @@ export default function App(): ReactElement {
                 return <Redirect to="/" />;
               }}
             />
-            <Route exact path="/startups" component={} />
+            <Route exact path="/startups" component={Startups} />
           </Switch>
         </main>
       </div>
